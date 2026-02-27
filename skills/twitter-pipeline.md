@@ -114,21 +114,49 @@ C) +20"
 
 Não postar nos 3 ao mesmo tempo. Espaçar.
 
-## Processo de geração
+## Processo de geração (Opção B — API)
 
 ```
-07h — varredura de fontes
+07h BRT — varredura de fontes
       ↓
 Identificar 3-5 oportunidades de conteúdo
       ↓
-Gerar rascunho de 2-3 tweets (formatos acima)
+Gerar rascunho de 2-3 tweets
       ↓
 Postar no topic rascunhos com tag #twitter
       ↓
-Estevão aprova, edita ou descarta
+Aguardar aprovação do Estevão
       ↓
-Postar (manualmente pelo Estevão ou via API se configurado)
+"aprova 1,3" → postar via Twitter API nos horários programados
+"edita 2: [texto]" → ajustar e aguardar nova aprovação
+ignore por 2h → descartar rascunhos do dia
 ```
+
+## Posting via Twitter API v2
+
+Credenciais em ~/.agent/.env:
+- TWITTER_CLIENT_ID
+- TWITTER_CLIENT_SECRET
+- TWITTER_ACCESS_TOKEN
+- TWITTER_ACCESS_TOKEN_SECRET
+- TWITTER_BEARER_TOKEN
+
+Endpoint de posting:
+```
+POST https://api.twitter.com/2/tweets
+Authorization: OAuth 1.0a
+Body: {"text": "[tweet]"}
+```
+
+Para threads: postar em sequência com `reply.in_reply_to_tweet_id`
+do tweet anterior.
+
+Horários de posting (após aprovação):
+- Tweet 1: próximo horário disponível (08h, 12h ou 18h BRT)
+- Tweet 2: horário seguinte na sequência
+- Tweet 3: último horário do dia
+
+Se aprovação chegar depois das 18h: agendar para o dia seguinte.
 
 ## Formato do rascunho no topic `rascunhos`
 

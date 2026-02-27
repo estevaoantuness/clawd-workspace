@@ -49,6 +49,16 @@
 - Memory diária: ~/agent/memory/YYYY-MM-DD.md
 - Heartbeat state: ~/agent/memory/heartbeat-state.json
 
+## Twitter / X
+- **Conta:** @bodybasehealth (ou conta pessoal do Estevão — definir)
+- **Credenciais em ~/.agent/.env:**
+  - TWITTER_CLIENT_ID
+  - TWITTER_CLIENT_SECRET
+  - TWITTER_ACCESS_TOKEN
+  - TWITTER_ACCESS_TOKEN_SECRET
+  - TWITTER_BEARER_TOKEN
+- **Dev portal:** developer.twitter.com → App com permissão Read + Write
+
 ## API tokens
 Armazenados em ~/.agent/.env. Nunca expor ou logar.
 
