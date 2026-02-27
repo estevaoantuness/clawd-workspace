@@ -25,16 +25,16 @@
 - **Bot token:** em ~/.agent/.env → TELEGRAM_BOT_TOKEN
 - **Grupo principal:** Clawd HQ
 
-| Tópico        | Thread ID      |
-|---------------|----------------|
-| inbox         | <PREENCHER>    |
-| bodybase      | <PREENCHER>    |
-| rascunhos     | <PREENCHER>    |
-| superbem      | <PREENCHER>    |
-| financeiro    | <PREENCHER>    |
-| knowledge     | <PREENCHER>    |
-| sistema       | <PREENCHER>    |
-| direto        | <PREENCHER>    |
+| Tópico        | Thread ID |
+|---------------|-----------|
+| inbox         | 14        |
+| bodybase      | 15        |
+| rascunhos     | 16        |
+| superbem      | 17        |
+| financeiro    | 18        |
+| knowledge     | 19        |
+| sistema       | 20        |
+| direto        | 21        |
 
 ## GitHub
 - **Usuário:** estevaoantuness
