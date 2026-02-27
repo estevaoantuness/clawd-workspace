@@ -11,7 +11,7 @@
 
 ## Email
 - **Conta do Clawd:** estevao.antunes.rocha@gmail.com
-- **Monitorar inbox de:** estevao.rocha.antunes@gmail.com (com permissão OAuth)
+- **Monitorar inbox de:** [email pessoal — configurado no .env]
 - **Provider:** Gmail API (OAuth2)
 
 ## Google Sheets — CRM BodyBase

@@ -1,7 +1,7 @@
 # MEMORY.md — Padrões e Preferências (apenas DM)
 
 ## Contato Pessoal (apenas DM)
-- **Email pessoal:** estevao.rocha.antunes@gmail.com
+- **Email pessoal:** [privado — configurado localmente no .env]
 - Este campo existe aqui (não no USER.md) para não vazar em grupos.
 
 ## Preferências do Estevão
